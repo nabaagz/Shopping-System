@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context privileged="true" reloadable="true">
+<WatchedResource>WEB-INF/web.xml</WatchedResource>
+<Manager pathname="" />
+<Resource name="jdbc/EECS"
+auth="Container"
+maxTotal="100"
+maxIdle="30"
+maxWaitMillis="10000"
+username="xxx"
+password="yyy"
+factory="org.apache.tomcat.jdbc.pool.DataSourceFactory"
+type="javax.sql.DataSource" driverClassName="org.sqlite.JDBC"
+url="jdbc:sqlite:C:\Users\nabat\Desktop\students.db"/>
+<ResourceLink global="jdbc/EECS" name="jdbc/EECS"
+type="javax.sql.DataSource" />
+</Context>
